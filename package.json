@@ -1,11 +1,12 @@
 {
   "name": "react-thai-address-autocomplete",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react thai address autocomplete",
   "main": "./dist/main.js",
   "types": "./dist/ThaiAddressAutoComplete.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "publishConfig": {
     "access": "public"

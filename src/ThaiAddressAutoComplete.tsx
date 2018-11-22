@@ -17,7 +17,7 @@ interface ComponentProps {
 	renderItems: (item: Address, index: number) => JSX.Element;
 }
 
-class ThaiAddressAutoComplete extends React.Component<ComponentProps> {
+export default class ThaiAddressAutoComplete extends React.Component<ComponentProps> {
 	constructor(props: ComponentProps) {
 		super(props);
 
@@ -72,5 +72,3 @@ class ThaiAddressAutoComplete extends React.Component<ComponentProps> {
 		);
 	}
 }
-
-export default ThaiAddressAutoComplete;

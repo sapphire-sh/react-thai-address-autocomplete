@@ -1,0 +1,21 @@
+{
+	"extends": ["tslint:recommended", "tslint-react"],
+	"rules": {
+		"indent": [true, "tabs"],
+		"whitespace": false,
+		"quotemark": [true, "single", "jsx-double"],
+		"object-literal-key-quotes": [true, "always"],
+		"member-ordering": false,
+		"object-literal-sort-keys": false,
+		"ordered-imports": false,
+		"interface-name": [true, "never-prefix"],
+		"one-line": [true, "check-open-brace"],
+		"class-name": false,
+		"variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case", "allow-snake-case"],
+		"no-namespace": false,
+		"max-line-length": [true, 180],
+		"no-console": false,
+		"jsx-alignment": false,
+		"jsx-no-multiline-js": false
+	}
+}

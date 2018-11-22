@@ -1,0 +1,58 @@
+{
+  "name": "react-thai-address-autocomplete",
+  "version": "1.0.0",
+  "description": "react thai address autocomplete",
+  "main": "./dist/main.js",
+  "types": "./dist/ThaiAddressAutoComplete.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server",
+    "build:dev": "cross-env NODE_ENV=development npm run build",
+    "build:prod": "cross-env NODE_ENV=production npm run build",
+    "prepublishOnly": "npm run build:prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapphiredev/react-thai-address-autocomplete.git"
+  },
+  "author": "sapphire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sapphiredev/react-thai-address-autocomplete/issues"
+  },
+  "homepage": "https://github.com/sapphiredev/react-thai-address-autocomplete#readme",
+  "keywords": [
+    "react",
+    "autocomplete",
+    "thai",
+    "thailand",
+    "address"
+  ],
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-thai-address": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.7.7",
+    "@types/react-dom": "^16.0.10",
+    "@types/webpack": "^4.4.19",
+    "cross-env": "^5.2.0",
+    "file-loader": "^2.0.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "ts-loader": "^5.3.0",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.6",
+    "webpack": "^4.26.0",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

@@ -13,8 +13,9 @@
 		"class-name": false,
 		"variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case", "allow-snake-case"],
 		"no-namespace": false,
+    "no-reference": false,
 		"max-line-length": [true, 180],
-		"no-console": false,
+    "no-console": false,
 		"jsx-alignment": false,
 		"jsx-no-multiline-js": false
 	}

@@ -56,7 +56,7 @@ class ThaiAddressAutoComplete extends React.Component<ComponentProps> {
 						return {
 							...a,
 							[b.key]: b.value,
-						}
+						};
 					}, {}),
 				}).map((item, i) => {
 					return (

@@ -53,12 +53,22 @@ class AppRouter extends React.Component<any, ComponentState> {
 		});
 	}
 
+	private renderItems(item: Address, index: number) {
+		return (
+			<p>
+				{JSON.stringify(item)}
+			</p>
+		);
+	}
+
 	public render() {
 		return (
 			<div>
-				{Object.keys(this.state.address).map((key) => {
+				{Object.keys(this.state.address).map((key, i) => {
 					return (
-						<div>
+						<div
+							key={i}
+						>
 							<p>
 								{key}
 							</p>
@@ -75,13 +85,7 @@ class AppRouter extends React.Component<any, ComponentState> {
 				<ThaiAddressAutoComplete
 					address={this.state.address}
 					handleSelect={this.handleSelect}
-					renderItems={(item, i) => {
-						return (
-							<p>
-								{JSON.stringify(item)}
-							</p>
-						);
-					}}
+					renderItems={this.renderItems}
 				/>
 			</div>
 		);

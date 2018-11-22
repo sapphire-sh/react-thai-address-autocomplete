@@ -1,21 +1,20 @@
 {
-	"compilerOptions": {
-		"target": "es5",
-		"module": "commonjs",
-		"lib": [
-			"dom",
-			"es2015",
-		],
-		"outDir": "./dist",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "es2015",
+    ],
+    "typeRoots": [
+      "./src/shims.d.ts"
+    ],
+    "outDir": "./dist",
     "rootDir": "./src",
     "declaration": true,
-		"jsx": "react",
+    "jsx": "react",
     "strict": true,
-		"moduleResolution": "node",
+    "moduleResolution": "node",
     "esModuleInterop": true
-	},
-	"exclude": [
-    "src/**/__tests__/**",
-    "src/index.tsx"
-	]
+  }
 }

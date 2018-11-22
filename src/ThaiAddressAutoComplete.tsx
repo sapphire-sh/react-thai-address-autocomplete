@@ -6,6 +6,10 @@ import ThaiAddress, {
 	Address,
 } from 'react-thai-address';
 
+export {
+	Address,
+} from 'react-thai-address';
+
 interface ComponentProps {
 	address: Partial<Address>;
 

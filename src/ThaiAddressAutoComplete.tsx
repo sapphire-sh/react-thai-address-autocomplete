@@ -49,22 +49,16 @@ class ThaiAddressAutoComplete extends React.Component<ComponentProps> {
 				return false;
 			}
 			return `${value}`.length >= 2;
-		});
-
-		if(filteredAddress.length === 0) {
-			return null;
-		}
+		}).reduce((a, b) => {
+			return {
+				...a,
+				[b.key]: b.value,
+			};
+		}, {});
 
 		return (
 			<div>
-				{ThaiAddress.search({
-					...filteredAddress.reduce((a, b) => {
-						return {
-							...a,
-							[b.key]: b.value,
-						};
-					}, {}),
-				}).map((item, i) => {
+				{ThaiAddress.search(filteredAddress).map((item, i) => {
 					return (
 						<div
 							key={i}
